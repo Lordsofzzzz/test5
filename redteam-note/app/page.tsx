@@ -89,11 +89,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="mt-auto border-t border-zinc-800/50 py-6">
-        <div className="flex justify-center gap-6 text-sm text-gray-400">
-          <a href="/docs" className="hover:text-red-500 transition-colors">Documentation</a>
-          <a href="/contribute" className="hover:text-orange-500 transition-colors">Contribute</a>
-          <a href="/github" className="hover:text-yellow-500 transition-colors">GitHub</a>
-        </div>
+        {/* Footer content removed */}
       </footer>
     </div>
   );
