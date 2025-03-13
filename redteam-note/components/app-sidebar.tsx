@@ -1,6 +1,6 @@
 import * as React from "react"
 import { GalleryVerticalEnd } from "lucide-react"
-import { getAllNotes } from '@/lib/mdx'
+import { getAllNotes } from '@/lib/markdown'
 
 import {
   Sidebar,
