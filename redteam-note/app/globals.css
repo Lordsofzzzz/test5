@@ -69,7 +69,16 @@
   --chart-4: #991b1b;
   --chart-5: #7f1d1d;
   --radius: 0.75rem;
-  --border-color: #dc2626; /* Add this line */ --sidebar: hsl(0 0% 98%); --sidebar-foreground: hsl(240 5.3% 26.1%); --sidebar-primary: hsl(240 5.9% 10%); --sidebar-primary-foreground: hsl(0 0% 98%); --sidebar-accent: hsl(240 4.8% 95.9%); --sidebar-accent-foreground: hsl(240 5.9% 10%); --sidebar-border: hsl(220 13% 91%); --sidebar-ring: hsl(217.2 91.2% 59.8%);
+  --border-color: #dc2626; /* Add this line */
+  --sidebar: #fff5f5;
+  --sidebar-foreground: #1a1a1a;
+  --sidebar-primary: #dc2626;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fee2e2;
+  --sidebar-accent-foreground: #b91c1c;
+  --sidebar-border: #fecaca;
+  --sidebar-ring: #dc2626;
+  --sidebar-background: #fff5f5;
 }
 
 .dark {
@@ -97,14 +106,15 @@
   --chart-3: #b91c1c;
   --chart-4: #991b1b;
   --chart-5: #7f1d1d;
-  --sidebar: hsl(240 5.9% 10%);
-  --sidebar-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-primary: hsl(224.3 76.3% 48%);
-  --sidebar-primary-foreground: hsl(0 0% 100%);
-  --sidebar-accent: hsl(240 3.7% 15.9%);
-  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
-  --sidebar-border: hsl(240 3.7% 15.9%);
-  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+  --sidebar: #1c1917;
+  --sidebar-foreground: #fafafa;
+  --sidebar-primary: #dc2626; 
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #b91c1c;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #2c1f1f;
+  --sidebar-ring: #dc2626;
+  --sidebar-background: #1c1917;
 }
 
 @layer base {
@@ -149,7 +159,7 @@
 
 /* Add these background decorations */
 .bg-grid {
-  background-image: 
+  background-image: ba
     linear-gradient(to right, rgba(220, 38, 38, 0.05) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(220, 38, 38, 0.05) 1px, transparent 1px);
   background-size: 20px 20px;
@@ -177,4 +187,20 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(220, 38, 38, 0.6);
+}
+
+.bg-sidebar {
+  background-color: var(--sidebar-background);
+}
+
+.text-sidebar-foreground {
+  color: var(--sidebar-foreground);
+}
+
+.bg-sidebar-primary {
+  background-color: var(--sidebar-primary);
+}
+
+.text-sidebar-primary-foreground {
+  color: var(--sidebar-primary-foreground);
 }
